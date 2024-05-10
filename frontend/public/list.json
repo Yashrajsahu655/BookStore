@@ -1,32 +1,32 @@
 [
     {
         "id": 1,
-        "name": "Story book",
-        "title": "lorem lorem lorem lorem",
+        "name": "Fiction book",
+        "title": "To Kill a Mockingbird",
         "price": 0,
         "category": "free",
         "Image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1714943761~exp=1714947361~hmac=6966cec822e0225c3a949622ec55f03f79caa56c750a1fcb48e22c8546df8863&w=740"
     },
     {
         "id": 2,
-        "name": "Comedy book",
-        "title": "lorem lorem lorem lorem",
+        "name": "Non-fiction book",
+        "title": "Sapiens: A Brief History of Humankind",
         "price": 20,
         "category": "Fun",
         "Image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1714943761~exp=1714947361~hmac=6966cec822e0225c3a949622ec55f03f79caa56c750a1fcb48e22c8546df8863&w=740"
     },
     {
         "id": 3,
-        "name": "music book",
-        "title": "lorem lorem lorem lorem",
+        "name": "Music book",
+        "title": "Beethoven: A Life in Nine Pieces",
         "price": 50,
         "category": "song",
         "Image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1714943761~exp=1714947361~hmac=6966cec822e0225c3a949622ec55f03f79caa56c750a1fcb48e22c8546df8863&w=740"
     },
     {
         "id": 4,
-        "name": "Story book",
-        "title": "lorem lorem lorem lorem",
+        "name": "Mystery book",
+        "title": "The Da Vinci Code",
         "price": 0,
         "category": "free",
         "Image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1714943761~exp=1714947361~hmac=6966cec822e0225c3a949622ec55f03f79caa56c750a1fcb48e22c8546df8863&w=740"
@@ -41,48 +41,48 @@
     },
     {
         "id": 6,
-        "name": "Story book",
-        "title": "lorem lorem lorem lorem",
+        "name": "Science Fiction book",
+        "title": "Dune",
         "price": 0,
         "category": "free",
         "Image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1714943761~exp=1714947361~hmac=6966cec822e0225c3a949622ec55f03f79caa56c750a1fcb48e22c8546df8863&w=740"
     },
     {
         "id": 7,
-        "name": "Social book",
-        "title": "lorem lorem lorem lorem",
+        "name": "Fantasy book",
+        "title": "The Hobbit",
         "price": 100,
-        "category": "Social",
+        "category": "Fantasy",
         "Image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1714943761~exp=1714947361~hmac=6966cec822e0225c3a949622ec55f03f79caa56c750a1fcb48e22c8546df8863&w=740"
     },
     {
         "id": 8,
-        "name": "Story book",
-        "title": "lorem lorem lorem lorem",
+        "name": "Romance book",
+        "title": "Pride and Prejudice",
         "price": 0,
         "category": "free",
         "Image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1714943761~exp=1714947361~hmac=6966cec822e0225c3a949622ec55f03f79caa56c750a1fcb48e22c8546df8863&w=740"
     },
     {
         "id": 9,
-        "name": "Physics book",
-        "title": "lorem lorem lorem lorem",
+        "name": "Thriller book",
+        "title": "The Girl with the Dragon Tattoo",
         "price": 200,
-        "category": "Science",
+        "category": "Thriller",
         "Image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1714943761~exp=1714947361~hmac=6966cec822e0225c3a949622ec55f03f79caa56c750a1fcb48e22c8546df8863&w=740"
     },
     {
         "id": 10,
-        "name": "Story book",
-        "title": "lorem lorem lorem lorem",
+        "name": "Horror book",
+        "title": "The Shining",
         "price": 0,
         "category": "free",
         "Image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1714943761~exp=1714947361~hmac=6966cec822e0225c3a949622ec55f03f79caa56c750a1fcb48e22c8546df8863&w=740"
     },
     {
         "id": 11,
-        "name": "Story book",
-        "title": "lorem lorem lorem lorem",
+        "name": "Biographybook",
+        "title": "Long Walk to Freedom",
         "price": 0,
         "category": "free",
         "Image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1714943761~exp=1714947361~hmac=6966cec822e0225c3a949622ec55f03f79caa56c750a1fcb48e22c8546df8863&w=740"

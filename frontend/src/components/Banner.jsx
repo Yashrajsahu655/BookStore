@@ -1,5 +1,5 @@
 import React from "react";
-import banner from '../../public/Banner.png';
+import banner from "../../public/Banner.png";
 function Banner() {
   return (
     <>
@@ -11,9 +11,8 @@ function Banner() {
               <span className="text-pink-500">new everyday!!!</span>
             </h1>
             <p className="text-sm md:text-xl">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              et totam. Tempora amet atque expedita, quae corrupti totam sed
-              pariatur corporis at veniam est voluptas animi!
+              Escape the ordinary and embrace the extraordinary at our
+              bookstore, where stories wait to be told
             </p>
             <label className="input input-bordered flex items-center gap-2">
               <svg
@@ -28,7 +27,9 @@ function Banner() {
               <input type="text" className="grow" placeholder="Email" />
             </label>
           </div>
-          <button className="btn mt-6 btn-secondary">Get Started</button>
+          <a href="/signup">
+            <button className="btn mt-6 btn-secondary">Get Started</button>
+          </a>
         </div>
         <div className=" order-1 w-full mt-20 md:w-1/2">
           <img

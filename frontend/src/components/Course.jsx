@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import Home from '../Home'
-import list from "../../public/list.json";
-import { Link } from "react-router-dom";
+import Home from "../Home";
+import { Link, json } from "react-router-dom";
+import axios from "axios";
 
 const Course = () => {
+  const [book, setBook] = useState([]);
+
+  useEffect(() => {
+    const getBook = async () => {
+      try {
+        const res = await axios.get("http://localhost:4002/book");
+        console.log(res.data);
+        setBook(res.data);
+      } catch (error) {
+        console.log("Error while fetching book ", error);
+      }
+    };
+
+    getBook();
+  }, []);
+
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
@@ -14,21 +30,19 @@ const Course = () => {
             <span className=" text-pink-500"> Here! :)</span>
           </h1>
           <p className="mt-12">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
-            earum dicta beatae iusto unde quas reprehenderit esse, neque
-            quisquam nulla. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Voluptas quae nostrum sint eum officiis qui!
+            Experience the power of words at our bookstore, where stories have
+            the ability to change lives.
           </p>
           <Link to={"/"}>
-            <button  className=" bg-pink-500 text-white px-4 py-2 mt-6 rounded-lg hover:bg-pink-700 hover:duration-300">
-              Back 
+            <button className=" bg-pink-500 text-white px-4 py-2 mt-6 rounded-lg hover:bg-pink-700 hover:duration-300">
+              Back
             </button>
           </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4">
-          {list.map((item) => {
-            return <Card item={item} key={item.key} />;
+          {book.map((item) => {
+            return <Card item={item} key={item._id} />;
           })}
         </div>
       </div>

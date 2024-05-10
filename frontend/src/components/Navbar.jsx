@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Login from "./Login";
+import { useAuth } from "../context/AuthProvider";
+import LogOut from "./LogOut";
 
 const Navbar = () => {
+    const [authUser,setAuthUser] =useAuth();
+    // console.log(authUser);
 
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
@@ -77,7 +81,7 @@ const Navbar = () => {
                 {navItems}
               </ul>
             </div>
-            <a className=" text-2xl font-bold cursor-pointer">bookStore</a>
+            <a className=" text-2xl font-bold cursor-pointer">BookStore</a>
           </div>
           <div className="navbar-end space-x-3">
             <div className="navbar-center hidden lg:flex">
@@ -108,8 +112,9 @@ const Navbar = () => {
                 </svg>
               </label>
             </div>
-
-
+            
+            {
+           authUser?<LogOut/>:
             <div>
               <a className="bg-black ml-2 text-white py-2 px-3 rounded-md  hover:bg-slate-500 duration-300 cursor-pointer"
               onClick={()=>document.getElementById('my_modal_3').showModal()} >
@@ -117,6 +122,7 @@ const Navbar = () => {
               </a>
               <Login />
             </div>
+        }
           </div>
         </div>
       </div>
