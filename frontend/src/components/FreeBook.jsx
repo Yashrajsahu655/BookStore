@@ -73,7 +73,14 @@ const FreeBook = () => {
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
         <h1 className=" font-bold text-lg pb-2">Free Offered Courses </h1>
         <p className="text-sm md:text-xl">
-         These are Some of the free books available on our Store,If you want to avail more books.<br />Please <Link to={'/login'} className=" text-blue-800">login</Link> to our store 
+         These are Some of the free books available on our Store,If you want to avail more books.<br />Please  <button
+                      className="underline text-blue-400 cursor-pointer"
+                      onClick={() =>
+                        document.getElementById("my_modal_3").showModal()
+                      }
+                    >
+                      login
+                    </button> to our store 
         </p>
 
         <div className="slider-container">
