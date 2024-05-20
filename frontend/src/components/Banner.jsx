@@ -1,5 +1,7 @@
 import React from "react";
 import banner from "../../public/Banner.png";
+import { Link } from "react-router-dom";
+
 function Banner() {
   return (
     <>
@@ -27,9 +29,9 @@ function Banner() {
               <input type="text" className="grow" placeholder="Email" />
             </label>
           </div>
-          <a href="/signup">
+          <Link to={"/signup"}>
             <button className="btn mt-6 btn-secondary">Get Started</button>
-          </a>
+          </Link>
         </div>
         <div className=" order-1 w-full mt-20 md:w-1/2">
           <img

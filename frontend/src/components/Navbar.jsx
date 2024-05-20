@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import Login from "./Login";
 import { useAuth } from "../context/AuthProvider";
 import LogOut from "./LogOut";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    const [authUser,setAuthUser] =useAuth();
-    // console.log(authUser);
+  const [authUser, setAuthUser] = useAuth();
+  // console.log(authUser);
 
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
@@ -27,16 +28,16 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <a href="/">Home</a>
+        <Link to={"/"}>Home</Link>
       </li>
       <li>
-        <a href="/course">Course</a>
+        <Link to={"/course"}>Course</Link>
       </li>
       <li>
-        <a href="/contactus">Contact</a>
+        <Link to={"/contactus"}>Contact</Link>
       </li>
       <li>
-        <a>About</a>
+        <Link to={"/about"}>Contact</Link>
       </li>
     </>
   );
@@ -112,17 +113,22 @@ const Navbar = () => {
                 </svg>
               </label>
             </div>
-            
-            {
-           authUser?<LogOut/>:
-            <div>
-              <a className="bg-black ml-2 text-white py-2 px-3 rounded-md  hover:bg-slate-500 duration-300 cursor-pointer"
-              onClick={()=>document.getElementById('my_modal_3').showModal()} >
-                login
-              </a>
-              <Login />
-            </div>
-        }
+
+            {authUser ? (
+              <LogOut />
+            ) : (
+              <div>
+                <a
+                  className="bg-black ml-2 text-white py-2 px-3 rounded-md  hover:bg-slate-500 duration-300 cursor-pointer"
+                  onClick={() =>
+                    document.getElementById("my_modal_3").showModal()
+                  }
+                >
+                  login
+                </a>
+                <Login />
+              </div>
+            )}
           </div>
         </div>
       </div>
