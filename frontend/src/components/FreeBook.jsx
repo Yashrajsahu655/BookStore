@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Card from "./Card";
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 
 const FreeBook = () => {
@@ -71,10 +72,8 @@ const FreeBook = () => {
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
         <h1 className=" font-bold text-lg pb-2">Free Offered Courses </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          molestiae voluptate libero odit perspiciatis? Minus voluptatum
-          cupiditate laborum dignissimos eius.
+        <p className="text-sm md:text-xl">
+         These are Some of the free books available on our Store,If you want to avail more books.<br />Please <Link to={'/login'} className=" text-blue-800">login</Link> to our store 
         </p>
 
         <div className="slider-container">
