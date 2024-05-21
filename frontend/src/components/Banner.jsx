@@ -32,7 +32,7 @@ function Banner() {
               <input type="text" className="grow" placeholder="Email" />
             </label>
           </div>
-          <Link to={authUser?"":"<signup/>"}>
+          <Link to={authUser?"":"/signup"}>
             <button className="btn mt-6 btn-secondary">Get Started</button>
           </Link>
         </div>
