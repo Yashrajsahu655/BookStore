@@ -1,6 +1,11 @@
-import React from "react";
+import React ,{useEffect} from "react";
 
 const AboutUs = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+  
   return (
     <div className="pt-20 pl-5 text-xl">
        <h1 className=" align-middle text-center pb-10 text-3xl">DUMMY TEXT</h1>
