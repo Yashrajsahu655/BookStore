@@ -1,8 +1,11 @@
 import React from "react";
 import banner from "../../public/Banner.png";
 import { Link } from "react-router-dom";
+import {useAuth} from '../context/AuthProvider'
 
 function Banner() {
+  const [authUser, setAuthUser] = useAuth();
+
   return (
     <>
       <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
@@ -29,7 +32,7 @@ function Banner() {
               <input type="text" className="grow" placeholder="Email" />
             </label>
           </div>
-          <Link to={"/signup"}>
+          <Link to={authUser?"":"<signup/>"}>
             <button className="btn mt-6 btn-secondary">Get Started</button>
           </Link>
         </div>
