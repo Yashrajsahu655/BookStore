@@ -20,7 +20,7 @@ const FreeBook = () => {
       }
     };
     getBook();
-  }, []);
+  }, [book]);
 
   if (book.length === 0) {
     return (
