@@ -13,8 +13,6 @@ import bcrypt from 'bcryptjs'
      
      let hashPassword = await bcrypt.hash(password,10)
      
-    
-
       const createdUser = new User({
         fullname,
         email,
